@@ -4,8 +4,8 @@ const DEFAULT_MANIFEST = {
   name: 'Aaroho',
   tagline: 'MUSIC. ENERGY. SOUL.',
   introduction: "[WRITE AAROHO'S BAND INTRODUCTION HERE]",
-  logo: 'media/logo/aaroho-logo.png',
-  heroImage: 'media/hero/band-group-photo.jpg',
+  logo: './public/media/logo/aaroho-logo.png',
+  heroImage: './public/media/hero/band-group-photo.jpg',
   performanceDriveLink: 'https://drive.google.com/drive/folders/1v9LyJA_9iLRQiqFeaX_Lmy2EtVbV_pK0?usp=drive_link',
   members: [],
   videos: [],
@@ -42,7 +42,7 @@ const resolveManifest = (data = {}) => {
 
 const refreshManifest = async () => {
   try {
-    const response = await fetch(`media/manifest.json?ts=${Date.now()}`);
+    const response = await fetch(`./public/media/manifest.json?ts=${Date.now()}`);
     if (!response.ok) return;
 
     const data = await response.json();

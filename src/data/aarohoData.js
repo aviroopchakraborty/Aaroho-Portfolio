@@ -2,15 +2,15 @@ const defaultManifest = {
   name: 'Aaroho',
   tagline: 'MUSIC. ENERGY. SOUL.',
   introduction: "[WRITE AAROHO'S BAND INTRODUCTION HERE]",
-  logo: 'media/logo/aaroho-logo.png',
-  heroImage: 'media/hero/band-group-photo.jpg',
+  logo: './public/media/logo/aaroho-logo.png',
+  heroImage: './public/media/hero/band-group-photo.jpg',
   performanceDriveLink: 'https://drive.google.com/drive/folders/1v9LyJA_9iLRQiqFeaX_Lmy2EtVbV_pK0?usp=drive_link',
   members: [
     {
       name: 'DRUMMER',
       role: 'Drummer',
       intro: '[Short drummer introduction]',
-      image: 'media/members/drummer.jpg',
+      image: './public/media/members/drummer.jpg',
       alt: 'Aaroho drummer'
     },
     {
@@ -46,7 +46,7 @@ const defaultManifest = {
   }
 };
 
-const manifest = await fetch('media/manifest.json').then((res) => res.json()).catch(() => defaultManifest);
+const manifest = await fetch('./public/media/manifest.json').then((res) => res.json()).catch(() => defaultManifest);
 
 export const aarohoData = {
   ...defaultManifest,

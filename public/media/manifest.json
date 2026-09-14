@@ -1,14 +1,14 @@
 {
   "name": "Aaroho",
   "tagline": "MUSIC. ENERGY. SOUL.",
-  "logo": "media/logo/aaroho-logo.png",
-  "heroImage": "media/hero/band-group-photo.jpg",
+  "logo": "./public/media/logo/aaroho-logo.png",
+  "heroImage": "./public/media/hero/band-group-photo.jpg",
   "members": [
     {
       "name": "Drummer",
       "role": "Drummer",
       "intro": "",
-      "image": "media/members/drummer.jpg",
+      "image": "./public/media/members/drummer.jpg",
       "alt": "Aaroho drummer"
     }
   ],
@@ -18,22 +18,22 @@
     {
       "title": "Live 01",
       "year": "",
-      "src": "media/videos/live-01.mp4",
-      "poster": "media/hero/band-group-photo.jpg"
+      "src": "./public/media/videos/live-01.mp4",
+      "poster": "./public/media/hero/band-group-photo.jpg"
     },
     {
       "title": "Live 02",
       "year": "",
-      "src": "media/videos/live-02.mp4",
-      "poster": "media/hero/band-group-photo.jpg"
+      "src": "./public/media/videos/live-02.mp4",
+      "poster": "./public/media/hero/band-group-photo.jpg"
     }
   ],
   "gallery": [
     {
       "type": "video",
-      "video": "media/gallery/video-01.mp4",
+      "video": "./public/media/gallery/video-01.mp4",
       "caption": "Video 01",
-      "poster": "media/hero/band-group-photo.jpg"
+      "poster": "./public/media/hero/band-group-photo.jpg"
     }
   ],
   "socialLinks": {
