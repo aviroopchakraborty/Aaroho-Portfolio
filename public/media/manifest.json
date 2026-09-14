@@ -1,0 +1,44 @@
+{
+  "name": "Aaroho",
+  "tagline": "MUSIC. ENERGY. SOUL.",
+  "logo": "/public/media/logo/aaroho-logo.png",
+  "heroImage": "/public/media/hero/band-group-photo.jpg",
+  "members": [
+    {
+      "name": "Drummer",
+      "role": "Drummer",
+      "intro": "",
+      "image": "/public/media/members/drummer.jpg",
+      "alt": "Aaroho drummer"
+    }
+  ],
+  "achievements": [],
+  "certificates": [],
+  "videos": [
+    {
+      "title": "Live 01",
+      "year": "",
+      "src": "/public/media/videos/live-01.mp4",
+      "poster": "/public/media/hero/band-group-photo.jpg"
+    },
+    {
+      "title": "Live 02",
+      "year": "",
+      "src": "/public/media/videos/live-02.mp4",
+      "poster": "/public/media/hero/band-group-photo.jpg"
+    }
+  ],
+  "gallery": [
+    {
+      "type": "video",
+      "video": "/public/media/gallery/video-01.mp4",
+      "caption": "Video 01",
+      "poster": "/public/media/hero/band-group-photo.jpg"
+    }
+  ],
+  "socialLinks": {
+    "instagram": "",
+    "youtube": "",
+    "spotify": ""
+  }
+}

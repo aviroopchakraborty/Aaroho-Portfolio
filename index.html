@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aaroho — Discover the band's music, members, live performances, achievements and visual journey."
+    />
+    <meta property="og:title" content="Aaroho — Official Band" />
+    <meta
+      property="og:description"
+      content="Aaroho — Discover the band's music, members, live performances, achievements and visual journey."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/public/media/hero/band-group-photo.jpg" />
+    <title>Aaroho — Official Band</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <nav class="nav container" aria-label="Main navigation">
+          <a href="#home" class="brand" aria-label="Aaroho home">
+            <img src="/public/media/logo/aaroho-logo.png" alt="Aaroho logo" />
+          </a>
+
+          <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-panel">
+            <div class="nav-links">
+              <a href="#home">HOME</a>
+              <a href="#band">BAND</a>
+              <a href="#members">MEMBERS</a>
+              <a href="#live">LIVE</a>
+              <a href="#achievements">ACHIEVEMENTS</a>
+              <a href="#gallery">GALLERY</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero">
+          <div class="hero-media" aria-hidden="true"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow">THE OFFICIAL BAND PORTFOLIO</p>
+              <h1>AAROHO</h1>
+              <p class="tagline">MUSIC. ENERGY. SOUL.</p>
+              <p class="intro">[WRITE AAROHO'S BAND INTRODUCTION HERE]</p>
+              <div class="hero-actions">
+                <a href="#members" class="btn btn-primary">MEET THE BAND</a>
+                <a href="#live" class="btn btn-secondary">WATCH LIVE</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="band" class="band-intro">
+          <div class="container band-intro-inner">
+            <div class="section-heading small">
+              <span class="kicker">AAROHO</span>
+              <h2>THE SOUND OF THE JOURNEY</h2>
+            </div>
+            <p>
+              [WRITE AAROHO'S BAND INTRODUCTION HERE]
+            </p>
+          </div>
+        </section>
+
+        <section id="members" class="members">
+          <div class="container">
+            <div class="section-heading">
+              <span class="kicker">BAND</span>
+              <h2>MEET THE BAND</h2>
+            </div>
+            <div id="membersGrid" class="members-grid" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section id="live" class="live">
+          <div class="container">
+            <div class="section-heading">
+              <span class="kicker">LIVE</span>
+              <h2>LIVE IN MOTION</h2>
+            </div>
+            <div id="videoGrid" class="video-grid" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section id="archive" class="archive">
+          <div class="container archive-inner">
+            <div class="section-heading">
+              <span class="kicker">ARCHIVE</span>
+              <h2>PERFORMANCE VIDEO ARCHIVE</h2>
+            </div>
+            <p>Access the full Google Drive archive of Aaroho performance videos.</p>
+            <a
+              class="btn btn-primary archive-link"
+              href="https://drive.google.com/drive/folders/1v9LyJA_9iLRQiqFeaX_Lmy2EtVbV_pK0?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              VIEW ALL PERFORMANCE VIDEOS
+            </a>
+          </div>
+        </section>
+
+        <section id="achievements" class="achievements">
+          <div class="container">
+            <div class="section-heading">
+              <span class="kicker">MOMENTS</span>
+              <h2>ACHIEVEMENTS</h2>
+              <p class="subtitle">MOMENTS THAT DEFINE OUR JOURNEY</p>
+            </div>
+
+            <div class="achievements-wrap">
+              <div id="achievementTimeline" class="timeline" aria-live="polite"></div>
+              <div id="prizeGrid" class="prize-grid" aria-live="polite"></div>
+            </div>
+
+            <div class="certificates-block">
+              <div class="section-heading small">
+                <span class="kicker">RECOGNITION</span>
+                <h3>CERTIFICATES &amp; RECOGNITION</h3>
+              </div>
+              <div id="certificateGrid" class="certificate-grid" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+          <div class="container">
+            <div class="section-heading">
+              <span class="kicker">VISUAL STORY</span>
+              <h2>GALLERY</h2>
+            </div>
+            <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <img src="/public/media/logo/aaroho-logo.png" alt="Aaroho logo" class="footer-logo" />
+            <p class="footer-tagline">MUSIC. ENERGY. SOUL.</p>
+          </div>
+          <div class="social-links" aria-label="Social links">
+            <a href="" target="_blank" rel="noreferrer" aria-label="Instagram">Instagram</a>
+            <a href="" target="_blank" rel="noreferrer" aria-label="YouTube">YouTube</a>
+            <a href="" target="_blank" rel="noreferrer" aria-label="Spotify">Spotify</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="videoModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Video player">
+        <button class="modal-close" aria-label="Close video">×</button>
+        <video id="videoPlayer" controls playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
