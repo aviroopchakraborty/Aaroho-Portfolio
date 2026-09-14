@@ -11,7 +11,7 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".svg"}
 
 
 def rel_url(path: Path) -> str:
-    return "./" + path.relative_to(ROOT).as_posix()
+    return path.relative_to(ROOT / "public").as_posix()
 
 
 def title_from_name(name: str) -> str:
@@ -97,7 +97,7 @@ def build_manifest() -> dict:
                         "title": title_from_name(item.stem),
                         "year": "",
                         "src": rel_url(item),
-                        "poster": hero_image or "./public/media/hero/band-group-photo.jpg",
+                        "poster": hero_image or "media/hero/band-group-photo.jpg",
                     }
                 )
 
@@ -118,15 +118,15 @@ def build_manifest() -> dict:
                         "type": "video",
                         "video": rel_url(item),
                         "caption": title_from_name(item.stem),
-                        "poster": hero_image or "/public/media/hero/band-group-photo.jpg",
+                        "poster": hero_image or "media/hero/band-group-photo.jpg",
                     }
                 )
 
     return {
         "name": "Aaroho",
         "tagline": "MUSIC. ENERGY. SOUL.",
-        "logo": logo_image or "./public/media/logo/aaroho-logo.png",
-        "heroImage": hero_image or "./public/media/hero/band-group-photo.jpg",
+        "logo": logo_image or "media/logo/aaroho-logo.png",
+        "heroImage": hero_image or "media/hero/band-group-photo.jpg",
         "members": members,
         "achievements": achievements,
         "certificates": certificates,
