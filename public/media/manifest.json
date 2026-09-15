@@ -8,7 +8,7 @@
       "name": "Nigam Mukherjee",
       "role": "Singer",
       "intro": "",
-      "image": "./public/media/members/IMG-20260318-WA0027.jpg",
+      "image": "",
       "alt": "Aaroho Nigam Mukherjee"
     },
     {
@@ -36,7 +36,7 @@
       "name": "Anuroop Chakraborty",
       "role": "Bassist",
       "intro": "",
-      "image": "",
+      "image": "./public/media/members/bassist.jpg",
       "alt": "Aaroho Anuroop Chakraborty"
     }
   ],
