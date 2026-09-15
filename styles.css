@@ -145,7 +145,7 @@ select {
 
 .hero {
   position: relative;
-  min-height: max(620px, 100svh);
+  min-height: max(620px, 94svh);
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -185,8 +185,15 @@ select {
 }
 
 @media (min-width: 701px) {
+  .hero-media {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--black);
+  }
+
   .hero-inner {
-    padding-top: clamp(8rem, 15vh, 11rem);
+    padding-top: clamp(6.5rem, 10vh, 8rem);
+    padding-bottom: clamp(3rem, 6vh, 5rem);
   }
 }
 
@@ -637,6 +644,46 @@ section {
   grid-auto-flow: dense;
 }
 
+.contact {
+  background: linear-gradient(180deg, #0f0f0f, #070707);
+  border-top: 1px solid var(--border);
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+  gap: 2.5rem;
+  align-items: end;
+}
+
+.contact-links {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contact-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--white);
+  overflow-wrap: anywhere;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: var(--bright-red);
+}
+
+.contact-label {
+  flex: 0 0 auto;
+  color: var(--bright-red);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14rem;
+}
+
 .gallery-item {
   position: relative;
   border: 1px solid var(--border);
@@ -789,6 +836,10 @@ section {
   }
 
   .achievements-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-inner {
     grid-template-columns: 1fr;
   }
 
