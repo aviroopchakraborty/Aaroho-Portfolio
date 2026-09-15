@@ -65,8 +65,10 @@ select {
 }
 
 .topbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 40;
   background: linear-gradient(180deg, rgba(10, 10, 10, 0.78), rgba(10, 10, 10, 0.58));
   -webkit-backdrop-filter: blur(20px) saturate(135%);
