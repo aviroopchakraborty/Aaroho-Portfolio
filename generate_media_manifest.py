@@ -8,6 +8,33 @@ ROOT = Path(__file__).resolve().parent
 MEDIA_ROOT = ROOT / "public" / "media"
 VIDEO_EXTS = {".mp4", ".webm", ".mov"}
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".svg"}
+MEMBER_SLOTS = [
+    {
+        "name": "Nigam Mukherjee",
+        "role": "Singer",
+        "aliases": {"singer", "nigam", "nigammukherjee"},
+    },
+    {
+        "name": "Abhigyan Pal",
+        "role": "Guitarist",
+        "aliases": {"guitarist", "abhigyan", "abhigyanpal"},
+    },
+    {
+        "name": "Aviroop Chakraborty",
+        "role": "Drummer",
+        "aliases": {"drummer", "aviroop", "aviroopchakraborty"},
+    },
+    {
+        "name": "Ankan Das",
+        "role": "Guitarist",
+        "aliases": {"guitarist2", "ankan", "ankandas"},
+    },
+    {
+        "name": "Anuroop Chakraborty",
+        "role": "Bassist",
+        "aliases": {"bassist", "anuroop", "anuroopchakraborty"},
+    },
+]
 
 
 def rel_url(path: Path) -> str:
@@ -16,6 +43,10 @@ def rel_url(path: Path) -> str:
 
 def title_from_name(name: str) -> str:
     return name.replace("-", " ").replace("_", " ").title()
+
+
+def normalized_name(value: str) -> str:
+    return "".join(character.lower() for character in value if character.isalnum())
 
 
 def build_manifest() -> dict:
@@ -41,20 +72,51 @@ def build_manifest() -> dict:
                 logo_image = rel_url(item)
                 break
 
-    members = []
+    member_images = []
     if members_dir.exists():
-        for item in sorted(members_dir.iterdir()):
-            if item.is_file() and item.suffix.lower() in IMAGE_EXTS:
-                member_name = title_from_name(item.stem)
-                members.append(
-                    {
-                        "name": member_name,
-                        "role": member_name,
-                        "intro": "",
-                        "image": rel_url(item),
-                        "alt": f"Aaroho {member_name.lower()}",
-                    }
+        member_images = [
+            item
+            for item in sorted(members_dir.iterdir())
+            if item.is_file() and item.suffix.lower() in IMAGE_EXTS
+        ]
+
+    assigned_images = {}
+    used_images = set()
+    for slot_index, slot in enumerate(MEMBER_SLOTS):
+        aliases = {normalized_name(alias) for alias in slot["aliases"]}
+        image = next(
+            (
+                item
+                for item in member_images
+                if item not in used_images
+                and (
+                    normalized_name(item.stem) in aliases
+                    or any(alias in normalized_name(item.stem) for alias in aliases)
                 )
+            ),
+            None,
+        )
+        if image is not None:
+            assigned_images[slot_index] = image
+            used_images.add(image)
+
+    remaining_images = [item for item in member_images if item not in used_images]
+    for slot_index in range(len(MEMBER_SLOTS)):
+        if slot_index not in assigned_images and remaining_images:
+            assigned_images[slot_index] = remaining_images.pop(0)
+
+    members = []
+    for slot_index, slot in enumerate(MEMBER_SLOTS):
+        image = assigned_images.get(slot_index)
+        members.append(
+            {
+                "name": slot["name"],
+                "role": slot["role"],
+                "intro": "",
+                "image": rel_url(image) if image else "",
+                "alt": f"Aaroho {slot['name']}",
+            }
+        )
 
     achievement_assets = []
     for content_dir in (achievements_dir, certificates_dir):

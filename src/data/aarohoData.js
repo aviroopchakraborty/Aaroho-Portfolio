@@ -7,32 +7,39 @@ const defaultManifest = {
   performanceDriveLink: 'https://drive.google.com/drive/folders/1v9LyJA_9iLRQiqFeaX_Lmy2EtVbV_pK0?usp=drive_link',
   members: [
     {
-      name: 'DRUMMER',
+      name: 'Nigam Mukherjee',
+      role: 'Singer',
+      intro: '',
+      image: '',
+      alt: 'Aaroho Nigam Mukherjee'
+    },
+    {
+      name: 'Abhigyan Pal',
+      role: 'Guitarist',
+      intro: '',
+      image: '',
+      alt: 'Aaroho Abhigyan Pal'
+    },
+    {
+      name: 'Aviroop Chakraborty',
       role: 'Drummer',
-      intro: '[Short drummer introduction]',
+      intro: '',
       image: './public/media/members/drummer.jpg',
-      alt: 'Aaroho drummer'
+      alt: 'Aaroho Aviroop Chakraborty'
     },
     {
-      name: '[MEMBER NAME]',
-      role: '[ROLE / INSTRUMENT]',
-      intro: '[MEMBER INTRODUCTION]',
+      name: 'Ankan Das',
+      role: 'Guitarist',
+      intro: '',
       image: '',
-      alt: '[MEMBER NAME]'
+      alt: 'Aaroho Ankan Das'
     },
     {
-      name: '[MEMBER NAME]',
-      role: '[ROLE / INSTRUMENT]',
-      intro: '[MEMBER INTRODUCTION]',
+      name: 'Anuroop Chakraborty',
+      role: 'Bassist',
+      intro: '',
       image: '',
-      alt: '[MEMBER NAME]'
-    },
-    {
-      name: '[MEMBER NAME]',
-      role: '[ROLE / INSTRUMENT]',
-      intro: '[MEMBER INTRODUCTION]',
-      image: '',
-      alt: '[MEMBER NAME]'
+      alt: 'Aaroho Anuroop Chakraborty'
     }
   ],
   videos: [],

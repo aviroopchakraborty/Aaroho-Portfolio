@@ -1,0 +1,3 @@
+{
+  "buildCommand": "python generate_media_manifest.py"
+}

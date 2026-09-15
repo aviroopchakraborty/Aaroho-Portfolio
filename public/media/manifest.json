@@ -5,11 +5,39 @@
   "heroImage": "./public/media/hero/band-group-photo.jpg",
   "members": [
     {
-      "name": "Drummer",
+      "name": "Nigam Mukherjee",
+      "role": "Singer",
+      "intro": "",
+      "image": "./public/media/members/IMG-20260318-WA0027.jpg",
+      "alt": "Aaroho Nigam Mukherjee"
+    },
+    {
+      "name": "Abhigyan Pal",
+      "role": "Guitarist",
+      "intro": "",
+      "image": "",
+      "alt": "Aaroho Abhigyan Pal"
+    },
+    {
+      "name": "Aviroop Chakraborty",
       "role": "Drummer",
       "intro": "",
       "image": "./public/media/members/drummer.jpg",
-      "alt": "Aaroho drummer"
+      "alt": "Aaroho Aviroop Chakraborty"
+    },
+    {
+      "name": "Ankan Das",
+      "role": "Guitarist",
+      "intro": "",
+      "image": "",
+      "alt": "Aaroho Ankan Das"
+    },
+    {
+      "name": "Anuroop Chakraborty",
+      "role": "Bassist",
+      "intro": "",
+      "image": "",
+      "alt": "Aaroho Anuroop Chakraborty"
     }
   ],
   "achievements": [],
