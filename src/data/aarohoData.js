@@ -72,7 +72,7 @@ const defaultManifest = {
     {
       year: '2025',
       category: 'Competition',
-      title: "1st Runner's up at Regaia'25",
+      title: "1st Runner's up at Regalia'25",
       description: "Secured 1st Runner's up position at the competition organized by RCCIIT."
     },
     {
@@ -90,14 +90,24 @@ const defaultManifest = {
   ],
   certificates: [
     {
-      title: 'Winner Award 2025',
+      title: 'First Runner up at Vocations',
       year: '2025',
-      image: './public/media/achievements/winner-award-2025.jpg'
+      image: './public/media/achievements/First Runner up at Vocations.jpg'
     },
     {
-      title: 'Winner Award 2025 (2)',
+      title: 'First Runner up at Regalia',
       year: '2025',
-      image: './public/media/achievements/winner-award-2025-1.jpg'
+      image: './public/media/achievements/First Runner up at Regalia.jpg'
+    },
+    {
+      title: 'Winner at Ecstasia',
+      year: '2026',
+      image: './public/media/achievements/Winner at Ecstasia.jpg'
+    },
+    {
+      title: 'Winner at Sanskriti',
+      year: '2026',
+      image: './public/media/achievements/Winner at Sanksriti.jpg'
     }
   ],
   gallery: [
