@@ -437,15 +437,13 @@ const renderUpcomingShows = () => {
 /* ── RENDER ACHIEVEMENTS ───────────────────────────────── */
 const renderAchievements = () => {
   const timeline = document.getElementById('achievementTimeline');
-  const prizeGrid = document.getElementById('prizeGrid');
 
-  if (!timeline || !prizeGrid) return;
+  if (!timeline) return;
 
   const achievements = safeArray(aarohoData.achievements);
 
   if (!achievements.length) {
     timeline.innerHTML = '<div class="empty-state"><p>Achievements and milestones will be updated here.</p></div>';
-    prizeGrid.innerHTML = '<div class="empty-state"><p>Prizes and awards will be added here.</p></div>';
     return;
   }
 
@@ -466,20 +464,7 @@ const renderAchievements = () => {
     )
     .join('');
 
-  const prizes = achievements
-    .map(
-      (achievement) => `
-        <div class="prize-card">
-          <span class="prize-rank">#1</span>
-          <h3>${achievement.title || '[PRIZE TITLE]'}</h3>
-          <p>${achievement.category || 'AWARD'}</p>
-        </div>
-      `
-    )
-    .join('');
-
   timeline.innerHTML = yearItems;
-  prizeGrid.innerHTML = prizes || '<div class="empty-state"><p>Prizes and awards will be added here.</p></div>';
 
   // Re-observe newly added timeline items
   reObserveReveal();
