@@ -8,7 +8,7 @@
       "name": "Nigam Mukherjee",
       "role": "Singer",
       "intro": "",
-      "image": "",
+      "image": "./public/media/members/singer.jpg",
       "alt": "Aaroho Nigam Mukherjee"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Ankan Das",
       "role": "Guitarist",
       "intro": "",
-      "image": "",
+      "image": "./public/media/members/ankan.jpg",
       "alt": "Aaroho Ankan Das"
     },
     {
