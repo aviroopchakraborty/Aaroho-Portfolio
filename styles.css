@@ -1364,7 +1364,7 @@ section {
 }
 
 .footer-logo {
-  width: 130px;
+  width: 90px;
 }
 
 .footer-tagline {
@@ -1383,6 +1383,9 @@ section {
 }
 
 .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   text-transform: uppercase;
   letter-spacing: 0.14rem;
   font-size: 0.72rem;

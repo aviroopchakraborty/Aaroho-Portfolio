@@ -47,7 +47,8 @@ const defaultManifest = {
   certificates: [],
   gallery: [],
   socialLinks: {
-    instagram: '',
+    instagram: 'https://www.instagram.com/aaroho.official?stkn=enFva2Rxemp4d3dz',
+    facebook: 'https://www.facebook.com/share/18uMDtp3M2/',
     youtube: '',
     spotify: ''
   }
