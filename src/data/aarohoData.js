@@ -8,36 +8,36 @@ const defaultManifest = {
   members: [
     {
       name: 'Nigam Mukherjee',
-      role: 'Singer',
-      intro: '',
+      role: 'Lead Vocalist',
+      intro: 'Bringing the voice and emotion that connect Aaroho\'s music with the audience.',
       image: '',
       alt: 'Aaroho Nigam Mukherjee'
     },
     {
       name: 'Abhigyan Pal',
       role: 'Guitarist',
-      intro: '',
+      intro: 'Shaping Aaroho\'s melodic identity through riffs, textures and expressive arrangements.',
       image: '',
       alt: 'Aaroho Abhigyan Pal'
     },
     {
       name: 'Aviroop Chakraborty',
       role: 'Drummer',
-      intro: '',
+      intro: 'Driving the band\'s energy with acoustic grooves, dynamics and raw live intensity.',
       image: './public/media/members/drummer.jpg',
       alt: 'Aaroho Aviroop Chakraborty'
     },
     {
       name: 'Ankan Das',
       role: 'Guitarist',
-      intro: '',
+      intro: 'Exploring the space between rhythm, melody and atmosphere.',
       image: '',
       alt: 'Aaroho Ankan Das'
     },
     {
       name: 'Anuroop Chakraborty',
       role: 'Bassist',
-      intro: '',
+      intro: 'Holding the groove together while adding movement, depth and character to the band\'s sound.',
       image: '',
       alt: 'Aaroho Anuroop Chakraborty'
     }
