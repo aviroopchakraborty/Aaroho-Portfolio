@@ -1527,6 +1527,10 @@ section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .shows-grid {
+    grid-template-columns: 1fr;
+  }
+
   .certificate-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1659,18 +1663,24 @@ section {
 
   .members-grid,
   .certificate-grid,
+  .shows-grid,
   .gallery-grid {
     grid-template-columns: 1fr;
   }
 
   .member-visual {
-    aspect-ratio: 16 / 9;
-    max-height: 220px;
+    aspect-ratio: 3 / 4;
   }
 
   .gallery-item.feature {
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1.5rem;
   }
 
   .footer-inner {
