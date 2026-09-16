@@ -605,6 +605,23 @@ const renderAll = () => {
   setTimeout(reObserveReveal, 50);
 };
 
+/* ── GALLERY SCROLL ────────────────────────────────────── */
+const initGalleryScroll = () => {
+  const galleryGrid = document.getElementById('galleryGrid');
+  const leftArrow = document.querySelector('.gallery-arrow-left');
+  const rightArrow = document.querySelector('.gallery-arrow-right');
+
+  if (!galleryGrid || !leftArrow || !rightArrow) return;
+
+  leftArrow.addEventListener('click', () => {
+    galleryGrid.scrollBy({ left: -400, behavior: 'smooth' });
+  });
+
+  rightArrow.addEventListener('click', () => {
+    galleryGrid.scrollBy({ left: 400, behavior: 'smooth' });
+  });
+};
+
 /* ── INIT ──────────────────────────────────────────────── */
 const init = () => {
   resolveManifest(aarohoData);
@@ -615,6 +632,7 @@ const init = () => {
   initNavbarScroll();
   initActiveNav();
   initScrollReveal();
+  initGalleryScroll();
 
   setInterval(() => { refreshManifest(); }, 3000);
 };
