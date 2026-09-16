@@ -40,7 +40,32 @@
       "alt": "Aaroho Anuroop Chakraborty"
     }
   ],
-  "achievements": [],
+  "achievements": [
+    {
+      "year": "2025",
+      "category": "Competition",
+      "title": "1st Runner's up at Vocations'25",
+      "description": "Secured 1st Runner's up position at the competition organized by MSIT."
+    },
+    {
+      "year": "2025",
+      "category": "Competition",
+      "title": "1st Runner's up at Regaia'25",
+      "description": "Secured 1st Runner's up position at the competition organized by RCCIIT."
+    },
+    {
+      "year": "2026",
+      "category": "Competition",
+      "title": "Winner at Ecstasia'26",
+      "description": "Secured the Winner position at the competition organized by UEM."
+    },
+    {
+      "year": "2026",
+      "category": "Competition",
+      "title": "Winner at Sanskriti'26",
+      "description": "Secured the Winner position at the competition organized by JU."
+    }
+  ],
   "certificates": [
     {
       "title": "Winner Award 2025",
