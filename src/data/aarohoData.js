@@ -120,6 +120,11 @@ const defaultManifest = {
       type: 'image',
       image: './public/media/gallery/photo_02.jpg',
       caption: 'Band Action'
+    },
+    {
+      type: 'image',
+      image: './public/media/gallery/photo_03.jpg',
+      caption: 'Band Action 2'
     }
   ],
   socialLinks: {
