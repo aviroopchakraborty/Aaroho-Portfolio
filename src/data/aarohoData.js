@@ -45,7 +45,24 @@ const defaultManifest = {
   videos: [],
   achievements: [],
   certificates: [],
-  gallery: [],
+  gallery: [
+    {
+      type: 'video',
+      video: './public/media/gallery/video-01.mp4',
+      caption: 'Video 01',
+      poster: './public/media/hero/band-group-photo.jpg'
+    },
+    {
+      type: 'image',
+      image: './public/media/gallery/photo_01.jpg',
+      caption: 'Live Performance'
+    },
+    {
+      type: 'image',
+      image: './public/media/gallery/photo_02.jpg',
+      caption: 'Band Action'
+    }
+  ],
   socialLinks: {
     instagram: 'https://www.instagram.com/aaroho.official?stkn=enFva2Rxemp4d3dz',
     facebook: 'https://www.facebook.com/share/18uMDtp3M2/',
