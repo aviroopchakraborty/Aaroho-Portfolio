@@ -43,6 +43,7 @@
               <a href="#band">BAND</a>
               <a href="#members">MEMBERS</a>
               <a href="#live">LIVE</a>
+              <a href="#shows">SHOWS</a>
               <a href="#achievements">ACHIEVEMENTS</a>
               <a href="#gallery">GALLERY</a>
             </div>
@@ -57,7 +58,7 @@
           <div class="container hero-inner">
             <div class="hero-copy">
               <p class="eyebrow">THE OFFICIAL BAND PORTFOLIO</p>
-              <h1>AAROHO</h1>
+              <h1 data-text="AAROHO">AAROHO</h1>
               <p class="tagline">MUSIC. ENERGY. SOUL.</p>
               <p class="intro">[WRITE AAROHO'S BAND INTRODUCTION HERE]</p>
               <div class="hero-actions">
@@ -70,11 +71,11 @@
 
         <section id="band" class="band-intro">
           <div class="container band-intro-inner">
-            <div class="section-heading small">
+            <div class="section-heading small reveal">
               <span class="kicker">AAROHO</span>
               <h2>THE SOUND OF THE JOURNEY</h2>
             </div>
-            <p>
+            <p class="reveal">
               [WRITE AAROHO'S BAND INTRODUCTION HERE]
             </p>
           </div>
@@ -82,33 +83,44 @@
 
         <section id="members" class="members">
           <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
               <span class="kicker">BAND</span>
               <h2>MEET THE BAND</h2>
             </div>
-            <div id="membersGrid" class="members-grid" aria-live="polite"></div>
+            <div id="membersGrid" class="members-grid stagger-children" aria-live="polite"></div>
           </div>
         </section>
 
         <section id="live" class="live">
           <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
               <span class="kicker">LIVE</span>
               <h2>LIVE IN MOTION</h2>
             </div>
-            <div id="videoGrid" class="video-grid" aria-live="polite"></div>
+            <div id="videoGrid" class="video-grid stagger-children" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section id="shows" class="upcoming-shows">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="kicker">UPCOMING</span>
+              <h2>UPCOMING SHOWS</h2>
+              <p class="subtitle">CATCH AAROHO LIVE NEAR YOU</p>
+            </div>
+            <div id="showsGrid" class="shows-grid stagger-children" aria-live="polite"></div>
           </div>
         </section>
 
         <section id="archive" class="archive">
           <div class="container archive-inner">
-            <div class="section-heading">
+            <div class="section-heading reveal">
               <span class="kicker">ARCHIVE</span>
               <h2>PERFORMANCE VIDEO ARCHIVE</h2>
             </div>
-            <p>Access the full Google Drive archive of Aaroho performance videos.</p>
+            <p class="reveal">Access the full Google Drive archive of Aaroho performance videos.</p>
             <a
-              class="btn btn-primary archive-link"
+              class="btn btn-primary archive-link reveal"
               href="https://drive.google.com/drive/folders/1v9LyJA_9iLRQiqFeaX_Lmy2EtVbV_pK0?usp=drive_link"
               target="_blank"
               rel="noreferrer"
@@ -120,7 +132,7 @@
 
         <section id="achievements" class="achievements">
           <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
               <span class="kicker">MOMENTS</span>
               <h2>ACHIEVEMENTS</h2>
               <p class="subtitle">MOMENTS THAT DEFINE OUR JOURNEY</p>
@@ -128,37 +140,37 @@
 
             <div class="achievements-wrap">
               <div id="achievementTimeline" class="timeline" aria-live="polite"></div>
-              <div id="prizeGrid" class="prize-grid" aria-live="polite"></div>
+              <div id="prizeGrid" class="prize-grid stagger-children" aria-live="polite"></div>
             </div>
 
             <div class="certificates-block">
-              <div class="section-heading small">
+              <div class="section-heading small reveal">
                 <span class="kicker">RECOGNITION</span>
                 <h3>CERTIFICATES &amp; RECOGNITION</h3>
               </div>
-              <div id="certificateGrid" class="certificate-grid" aria-live="polite"></div>
+              <div id="certificateGrid" class="certificate-grid stagger-children" aria-live="polite"></div>
             </div>
           </div>
         </section>
 
         <section id="gallery" class="gallery">
           <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
               <span class="kicker">VISUAL STORY</span>
               <h2>GALLERY</h2>
             </div>
-            <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+            <div id="galleryGrid" class="gallery-grid stagger-children" aria-live="polite"></div>
           </div>
         </section>
 
         <section id="contact" class="contact">
           <div class="container contact-inner">
-            <div class="section-heading">
+            <div class="section-heading reveal">
               <span class="kicker">CONNECT</span>
               <h2>CONTACT AAROHO</h2>
               <p class="subtitle">BOOKINGS, COLLABORATIONS &amp; ENQUIRIES</p>
             </div>
-            <div class="contact-links">
+            <div class="contact-links reveal">
               <a href="tel:+919330285209" class="contact-link">
                 <span class="contact-label">PHONE</span>
                 <span>+91 93302 85209</span>
