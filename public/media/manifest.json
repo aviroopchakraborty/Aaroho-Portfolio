@@ -1,7 +1,7 @@
 {
   "name": "Aaroho",
   "tagline": "MUSIC. ENERGY. SOUL.",
-  "logo": "./public/media/logo/aaroho-logo.png",
+  "logo": "./public/media/logo/aaroho-logo-1.png",
   "heroImage": "./public/media/hero/band-group-photo.jpg",
   "members": [
     {
@@ -41,7 +41,18 @@
     }
   ],
   "achievements": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "title": "Winner Award 2025",
+      "year": "2025",
+      "image": "./public/media/achievements/winner-award-2025.jpg"
+    },
+    {
+      "title": "Winner Award 2025 (2)",
+      "year": "2025",
+      "image": "./public/media/achievements/winner-award-2025-1.jpg"
+    }
+  ],
   "videos": [
     {
       "title": "Live 01",
@@ -54,15 +65,15 @@
       "year": "",
       "src": "./public/media/videos/live-02.mp4",
       "poster": "./public/media/hero/band-group-photo.jpg"
+    },
+    {
+      "title": "Live 03",
+      "year": "",
+      "src": "./public/media/videos/live-03.mp4",
+      "poster": "./public/media/hero/band-group-photo.jpg"
     }
   ],
   "gallery": [
-    {
-      "type": "video",
-      "video": "./public/media/gallery/video-01.mp4",
-      "caption": "Video 01",
-      "poster": "./public/media/hero/band-group-photo.jpg"
-    },
     {
       "type": "image",
       "image": "./public/media/gallery/photo_01.jpg",

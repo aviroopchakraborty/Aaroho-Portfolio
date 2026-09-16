@@ -2,7 +2,7 @@ const defaultManifest = {
   name: 'Aaroho',
   tagline: 'MUSIC. ENERGY. SOUL.',
   introduction: "[WRITE AAROHO'S BAND INTRODUCTION HERE]",
-  logo: './public/media/logo/aaroho-logo.png',
+  logo: './public/media/logo/aaroho-logo-1.png',
   heroImage: './public/media/hero/band-group-photo.jpg',
   performanceDriveLink: 'https://drive.google.com/drive/folders/1v9LyJA_9iLRQiqFeaX_Lmy2EtVbV_pK0?usp=drive_link',
   members: [
@@ -42,16 +42,40 @@ const defaultManifest = {
       alt: 'Aaroho Anuroop Chakraborty'
     }
   ],
-  videos: [],
-  achievements: [],
-  certificates: [],
-  gallery: [
+  videos: [
     {
-      type: 'video',
-      video: './public/media/gallery/video-01.mp4',
-      caption: 'Video 01',
+      title: 'Live 01',
+      year: '',
+      src: './public/media/videos/live-01.mp4',
       poster: './public/media/hero/band-group-photo.jpg'
     },
+    {
+      title: 'Live 02',
+      year: '',
+      src: './public/media/videos/live-02.mp4',
+      poster: './public/media/hero/band-group-photo.jpg'
+    },
+    {
+      title: 'Live 03',
+      year: '',
+      src: './public/media/videos/live-03.mp4',
+      poster: './public/media/hero/band-group-photo.jpg'
+    }
+  ],
+  achievements: [],
+  certificates: [
+    {
+      title: 'Winner Award 2025',
+      year: '2025',
+      image: './public/media/achievements/winner-award-2025.jpg'
+    },
+    {
+      title: 'Winner Award 2025 (2)',
+      year: '2025',
+      image: './public/media/achievements/winner-award-2025-1.jpg'
+    }
+  ],
+  gallery: [
     {
       type: 'image',
       image: './public/media/gallery/photo_01.jpg',
